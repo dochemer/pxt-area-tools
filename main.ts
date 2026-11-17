@@ -31,6 +31,12 @@ namespace arenaTools {
         projectile.setKind(SpriteKind.EnemyProjectile)
     }
 
+    //% block="on player overlaps enemy projectile"
+    //% draggableParameters="reporter"
+    export function onPlayerOverlapsEnemyProjectile(handler: (player: Sprite, projectile: Sprite) => void) {
+        sprites.onOverlap(SpriteKind.Player, SpriteKind.EnemyProjectile, handler)
+    }
+    
     /**
      * Make one sprite shoot a custom projectile image at another sprite.
      */
