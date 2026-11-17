@@ -1,3 +1,4 @@
+//% isKind
 namespace SpriteKind {
     export const EnemyProjectile = SpriteKind.create()
 }
