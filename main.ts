@@ -1,8 +1,8 @@
+//% isKind
 namespace SpriteKind {
     export const EnemyProjectile = SpriteKind.create()
 }
 namespace arenaTools {
-
     /**
      * Make one sprite shoot a small default projectile at another sprite.
      */
