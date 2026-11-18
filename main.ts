@@ -81,4 +81,37 @@ namespace arenaTools {
         // but not needed for the shooting blocks.
         let angle = Math.atan2(dy3, dx3)
     }
+
+    /**
+     * Update the enemy sprite based on the direction it is currently moving in.
+     */
+    //% block="update enemy facing %enemy left %leftImg right %rightImg up %upImage down %downImage"
+    //% group="Facing"
+    export function updateEnemyFacing(enemy: Sprite, leftImg: Image, rightImg: Image, upImage: Image, downImage: Image) {
+        if (enemy.vx <= 0 && enemy.vy <= 0) {
+            if (Math.abs(enemy.vx) >= Math.abs(enemy.vy)) {
+                enemy.setImage(leftImg)
+            } else {
+                enemy.setImage(upImage)
+            }
+        } else if (enemy.vx >= 0 && enemy.vy <= 0) {
+            if (Math.abs(enemy.vx) >= Math.abs(enemy.vy)) {
+                enemy.setImage(rightImg)
+            } else {
+                enemy.setImage(upImage)
+            }
+        } else if (enemy.vx >= 0 && enemy.vy >= 0) {
+            if (Math.abs(enemy.vx) >= Math.abs(enemy.vy)) {
+                enemy.setImage(rightImg)
+            } else {
+                enemy.setImage(downImage)
+            }
+        } else {
+            if (Math.abs(enemy.vx) >= Math.abs(enemy.vy)) {
+                enemy.setImage(leftImg)
+            } else {
+                enemy.setImage(downImage)
+            }
+        }
+    }
 }
