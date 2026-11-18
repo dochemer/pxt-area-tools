@@ -1,5 +1,5 @@
 {
-    "name": "testExtensions",
+    "name": "pxt-arena-tools",
     "version": "0.3.1",
     "description": "",
     "dependencies": {
