@@ -1,4 +1,4 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v4.1.28/---simulator","cdnUrl":"https://cdn.makecode.com","version":"0.3.4","target":"arcade","targetVersion":"4.1.28","repo":"dochemer/pxt-area-tools"}
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v4.1.28/---simulator","cdnUrl":"https://cdn.makecode.com","version":"0.3.5","target":"arcade","targetVersion":"4.1.28","repo":"dochemer/pxt-area-tools"}
 // total=1707518 new=2.44% cached=67.97% other=29.58%
 (function (ectx) {
 'use strict';
@@ -466,7 +466,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P215263(s) {
+function _main___P215430(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -874,13 +874,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P215263.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
-_main___P215263.continuations = [  ]
+_main___P215430.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
+_main___P215430.continuations = [  ]
 
-function _main___P215263_mk(s) {
+function _main___P215430_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P215263, depth: s.depth + 1,
+        parent: s, fn: _main___P215430, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -43186,5 +43186,5 @@ const sprites_BaseSpriteSayRenderer__C197921_VT = mkVTable({
 
 const breakpoints = setupDebugger(1, ["EnemyProjectile___214917"])
 
-return _main___P215263
+return _main___P215430
 })
