@@ -116,4 +116,41 @@ namespace arenaTools {
             }
         }
     }
+
+    /**
+     * Update the player/enemy sprite based on the direction it is currently moving in.
+     */
+    //% block="update sprite facing %sprite left %leftImg right %rightImg up %upImage down %downImage"
+    //% leftImg.shadow=screen_image_picker
+    //% rightImg.shadow=screen_image_picker
+    //% upImage.shadow=screen_image_picker
+    //% downImage.shadow=screen_image_picker
+    //% group="Facing"
+    export function updateSpriteFacing(sprite: Sprite, leftImg: Image, rightImg: Image, upImage: Image, downImage: Image) {
+        if (sprite.vx <= 0 && sprite.vy <= 0) {
+            if (Math.abs(sprite.vx) >= Math.abs(sprite.vy)) {
+                sprite.setImage(leftImg)
+            } else {
+                sprite.setImage(upImage)
+            }
+        } else if (sprite.vx >= 0 && sprite.vy <= 0) {
+            if (Math.abs(sprite.vx) >= Math.abs(sprite.vy)) {
+                sprite.setImage(rightImg)
+            } else {
+                sprite.setImage(upImage)
+            }
+        } else if (sprite.vx >= 0 && sprite.vy >= 0) {
+            if (Math.abs(sprite.vx) >= Math.abs(sprite.vy)) {
+                sprite.setImage(rightImg)
+            } else {
+                sprite.setImage(downImage)
+            }
+        } else {
+            if (Math.abs(sprite.vx) >= Math.abs(sprite.vy)) {
+                sprite.setImage(leftImg)
+            } else {
+                sprite.setImage(downImage)
+            }
+        }
+    }
 }
