@@ -1,6 +1,6 @@
 {
     "name": "pxt-arena-tools",
-    "version": "0.3.6",
+    "version": "0.3.7",
     "description": "Contains blocks for managing enemies and their projectiles in arena battle games.",
     "dependencies": {
         "device": "*"
