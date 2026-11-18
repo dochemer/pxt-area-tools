@@ -1,8 +1,6 @@
-//% isKind
 namespace SpriteKind {
     export const EnemyProjectile = SpriteKind.create()
 }
-
 namespace arenaTools {
 
     /**
@@ -57,8 +55,8 @@ namespace arenaTools {
         let vx2 = dx2 / distance2 * speed
         let vy2 = dy2 / distance2 * speed
 
-        let projectile = sprites.createProjectileFromSprite(projectileImage, shooter, vx2, vy2)
-        projectile.setKind(SpriteKind.EnemyProjectile)
+        let projectile2 = sprites.createProjectileFromSprite(projectileImage, shooter, vx2, vy2)
+        projectile2.setKind(SpriteKind.EnemyProjectile)
     }
 
     /**
