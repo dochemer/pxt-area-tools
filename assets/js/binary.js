@@ -1,5 +1,5 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v4.1.28/---simulator","cdnUrl":"https://cdn.makecode.com","version":"0.1.0","target":"arcade","targetVersion":"4.1.28","repo":"dochemer/testextensions"}
-// total=1693612 new=2.43% cached=67.80% other=29.78%
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v4.1.28/---simulator","cdnUrl":"https://cdn.makecode.com","version":"0.2.0","target":"arcade","targetVersion":"4.1.28","repo":"dochemer/testextensions"}
+// total=1693614 new=2.43% cached=67.80% other=29.78%
 (function (ectx) {
 'use strict';
 const runtime = ectx.runtime;
@@ -466,7 +466,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P19119(s) {
+function _main___P36249(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -869,18 +869,18 @@ switch (step) {
     s.callLocIdx = 63; s.pc = 37; return s.tmp_0;
   case 37:
     r0 = s.retval;
-    globals.EnemyProjectile___4449 = (r0);
+    globals.EnemyProjectile___35980 = (r0);
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-_main___P19119.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
-_main___P19119.continuations = [  ]
+_main___P36249.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
+_main___P36249.continuations = [  ]
 
-function _main___P19119_mk(s) {
+function _main___P36249_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P19119, depth: s.depth + 1,
+        parent: s, fn: _main___P36249, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -43184,7 +43184,7 @@ const sprites_BaseSpriteSayRenderer__C2282_VT = mkVTable({
   },
 });
 
-const breakpoints = setupDebugger(1, ["EnemyProjectile___4449"])
+const breakpoints = setupDebugger(1, ["EnemyProjectile___35980"])
 
-return _main___P19119
+return _main___P36249
 })

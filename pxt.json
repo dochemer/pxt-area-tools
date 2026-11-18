@@ -1,6 +1,6 @@
 {
     "name": "testExtensions",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "{\n  \"name\": \"arena-tools\",\n  \"version\": \"0.0.2\",\n  \"description\": \"MakeCode Arcade extension\",\n  \"dependencies\": {\n    \"device\": \"*\"\n  },\n  \"files\": [\n    \"main.ts\"\n  ],\n  \"public\": true\n}",
     "dependencies": {
         "device": "*"
